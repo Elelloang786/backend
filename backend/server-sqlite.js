@@ -1,4 +1,4 @@
-// backend/server-sqlite.js
+
 const express = require("express")
 const cors = require("cors")
 const bcrypt = require("bcryptjs")
@@ -11,7 +11,7 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 
-// SQLite database setup
+
 const dbPath = path.join(__dirname, "database.sqlite")
 const db = new sqlite3.Database(dbPath)
 
